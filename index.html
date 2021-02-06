@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Gallery</title>
+</head>
+<style>
+    body {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    #grid-gallery {
+        display: grid;
+        grid-template-columns: repeat(5, 180px);
+        row-gap: 50px;
+        column-gap: 50px;
+        justify-content: space-around;
+        font-family: sans-serif;
+        padding: 15px;
+    }
+    .box {        
+        border-radius: 5%;
+         text-align: center;
+         font-size: 15px;
+         border: 1px solid rgb(95 95 95 / 10%);    
+    }
+    @media screen and (max-width: 1024px) {
+        #grid-gallery {
+            grid-template-columns: repeat(5, 180px);
+        }
+    }
+ 
+    @media screen and (max-width: 768px) {
+        #grid-gallery {
+            grid-template-columns: repeat(3,180px);
+        }
+    }
+ 
+    @media screen and (max-width: 414px) {
+        #grid-gallery {
+            grid-template-columns: repeat(1, 180px);
+            justify-content: center;
+        }
+    }
+    img {
+        width: 100%;
+        height: 80%;
+        background-color: rgb(32, 163, 240);
+        border-radius: 5% 5% 0% 0%;
+    }
+    h1 {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: rgb(51, 51, 51);
+        font-size: 22px;
+    }
+    p {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: rgb(51, 51, 51);
+    }
+
+</style>
+<body>
+    <h1>Gallery Heading</h1>
+    <div id="grid-gallery">   
+        <div class="box"> <img src="placeholder-image.png">Image Title</div>
+        <div class="box"> <img src="placeholder-image.png">Image Title</div>
+        <div class="box"> <img src="placeholder-image.png">Image Title</div>
+        <div class="box"> <img src="placeholder-image.png">Image Title</div>
+        <div class="box"> <img src="placeholder-image.png">Image Title</div>
+        <div class="box"> <img src="placeholder-image.png">Image Title</div>
+        <div class="box"> <img src="placeholder-image.png">Image Title</div>
+        <div class="box"> <img src="placeholder-image.png">Image Title</div>
+        <div class="box"> <img src="placeholder-image.png">Image Title</div>
+        <div class="box"> <img src="placeholder-image.png">Image Title</div> 
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas nostrum recusandae alias quos vero a, quisquam adipisci ab consequuntur quibusdam, similique culpa illo libero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit dolorem minima reprehenderit! Magni porro necessitatibus nobis sunt, voluptatum iste at culpa deleniti, non cum dolore ipsa, minus neque. Itaque, et. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore, vitae temporibus nemo nostrum velit dolorem ex perspiciatis, tempore incidunt expedita doloremque? In, ipsam illum amet autem nobis tenetur nulla doloremque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet vel labore nam, exercitationem atque iste facilis tempora sequi voluptatum repudiandae laborum quia doloribus itaque quisquam expedita commodi magni eius saepe. Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+</body>
+</html>
